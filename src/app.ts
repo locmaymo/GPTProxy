@@ -219,7 +219,7 @@ async function handleChatCompletion(req: Request, res: Response) {
             type: "invalid_request_error",
             code: "invalid_api_key"
           },
-          support: "https://discord.pawan.krd",
+          support: "https://proxyai.me",
         })
       );
       return res.end();
@@ -246,7 +246,7 @@ async function handleChatCompletion(req: Request, res: Response) {
             message: `Error getting a new session, If this error persists, your country may not be supported yet. If your country was the issue, please consider using a U.S. VPN or a U.S. residential proxy.`,
             type: "invalid_request_error",
           },
-          support: "https://discord.pawan.krd",
+          support: "https://proxyai.me",
         })
       );
 
@@ -436,7 +436,7 @@ async function handleChatCompletion(req: Request, res: Response) {
             "An error occurred. please try again. Additionally, ensure that your request complies with OpenAI's policy.",
           type: "invalid_request_error",
         },
-        support: "https://discord.pawan.krd",
+        support: "https://proxyai.me",
       })
     );
     res.end();
@@ -461,7 +461,7 @@ app.use((req, res) =>
       }) was not found. please make sure to use "http://localhost:3040/v1" as the base URL.`,
       type: "invalid_request_error",
     },
-    support: "https://discord.pawan.krd",
+    support: "https://proxyai.me",
   })
 );
 
