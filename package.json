@@ -7,7 +7,8 @@
   "scripts": {
     "start": "tsc && node dist/app.js",
     "watch": "tsc-watch --onSuccess \"node dist/app.js\"",
-    "build": "tsc"
+    "build": "tsc",
+    "start:pm2": "npm run build && pm2 start dist/app.js --name GPTProxy"
   },
   "author": "Pawan Osman",
   "license": "AGPL-3.0",
